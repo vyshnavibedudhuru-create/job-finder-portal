@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Finder Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>💼 Job Finder Portal</h1>
+    <input type="text" id="searchBox" placeholder="Search jobs...">
+  </header>
+
+  <main>
+    <div id="jobContainer" class="job-container"></div>
+  </main>
+
+  <!-- Job Details Popup -->
+  <div id="jobPopup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <p id="popupCompany"></p>
+      <p id="popupLocation"></p>
+      <h3>Job Description</h3>
+      <p id="popupDesc"></p>
+
+      <a id="applyBtn" class="apply-btn" href="apply.html">Apply Now</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
